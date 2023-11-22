@@ -31,7 +31,7 @@ public class othercharacter : MonoBehaviour
         // Check if the collision is with the ball
         if (collision.gameObject.CompareTag("TennisBall"))
         {
-            bool catchit = Random.Range(0f, 1f) > 0.2f;
+            bool catchit = Random.Range(0f, 1f) > 0.05f;
             if(catchit){
                 float randomValue = Random.Range(-10f, 10f);
                 tennisBall.ShootBall(new Vector3(17.22f, 8f, transform.position.z), new Vector3(-17.22f, 8f, randomValue));

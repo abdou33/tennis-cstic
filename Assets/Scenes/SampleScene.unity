@@ -307,8 +307,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 5.325857, z: 4.460684}
-  m_Center: {x: 0, y: 3.0821712, z: 0.00000014362566}
+  m_Size: {x: 1, y: 5.6565633, z: 4.460684}
+  m_Center: {x: 0, y: 2.9168181, z: 0.00000014362566}
 --- !u!1 &308462265
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +662,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialSpeed: 16.43
   jumpHeight: 17.3
-  BallPos: {x: 0, y: 0, z: 0}
 --- !u!135 &1282959149
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -809,6 +808,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: d4e3c797c2f18adb0bf04d3f00850f91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: d4e3c797c2f18adb0bf04d3f00850f91, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d4e3c797c2f18adb0bf04d3f00850f91, type: 3}
       propertyPath: m_Name
       value: tennis_character22
@@ -836,6 +843,7 @@ GameObject:
   - component: {fileID: 1764298913}
   - component: {fileID: 1764298912}
   - component: {fileID: 1764298911}
+  - component: {fileID: 1764298915}
   m_Layer: 5
   m_Name: pointsmanager
   m_TagString: Untagged
@@ -929,6 +937,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1764298915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764298910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c22caada9f672fe4f950039174ffeddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tennisBall: {fileID: 1282959148}
+  ballRigidbody: {fileID: 1282959147}
+  mypointsText: {fileID: 308462267}
+  otherpointsText: {fileID: 276442880}
+  lastlose: 0
 --- !u!1 &1781013569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,8 +1212,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 5.325857, z: 4.460684}
-  m_Center: {x: 0, y: 3.0821712, z: 0.00000014362566}
+  m_Size: {x: 1, y: 5.571898, z: 4.460684}
+  m_Center: {x: 0, y: 2.9591508, z: 0.00000014362566}
 --- !u!1 &2093153897
 GameObject:
   m_ObjectHideFlags: 0

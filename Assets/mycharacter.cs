@@ -13,6 +13,10 @@ public class mycharacter : MonoBehaviour
     {
         float randomValue = Random.Range(-10f, 10f);
         tennisBall.ShootBall(new Vector3(-17.22f, 5f, 0f), new Vector3(17.22f, 8f, randomValue));
+        tennisBall.player2turn = false;
+
+        tennisBall.catchit = Random.Range(0f, 1f) < 0.2f;
+        tennisBall.landingpointZ = randomValue;
     }
     void Update()
     {
@@ -20,7 +24,7 @@ public class mycharacter : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
 
         // Calculate the movement direction based on the input
-        Vector3 movement = new Vector3(0f, 0f, horizontalInput*-1);
+        Vector3 movement = new Vector3(0f, 0f, horizontalInput * -1);
 
         // Move the player using the Rigidbody component
         transform.Translate(movement * speed * Time.deltaTime);
@@ -39,6 +43,9 @@ public class mycharacter : MonoBehaviour
         {
             float randomValue = Random.Range(-10f, 10f);
             tennisBall.ShootBall(new Vector3(-17.22f, 8f, transform.position.z), new Vector3(17.22f, 8f, randomValue));
+            tennisBall.player2turn = false;
+            tennisBall.catchit = Random.Range(0f, 1f) < 0.2f;
+            tennisBall.landingpointZ = randomValue;
         }
     }
 }

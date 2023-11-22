@@ -68,6 +68,7 @@
     <Compile Include="Assets/othercharacter.cs" />
     <Compile Include="Assets/PointsManager.cs" />
     <Compile Include="Assets/TennisBall.cs" />
+    <Compile Include="Assets/animations.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -4,7 +4,10 @@ public class TennisBall : MonoBehaviour
 {
     public float initialSpeed = 1f;
     public float jumpHeight = 20f; // Adjust this value to control the jump height
-    public Vector3 BallPos = new Vector3(0f, 0f, 0f);
+    public bool player1turn;
+    public bool player2turn;
+    public bool catchit;
+    public float landingpointZ;
 
 
     void Start()
@@ -15,7 +18,7 @@ public class TennisBall : MonoBehaviour
 
     void Update()
     {
-        BallPos = transform.position;
+        Debug.Log("Player1:\t " + player1turn + "\tplayer2:\t" + player2turn);
     }
 
     public void ShootBall(Vector3 startCharacterPosition, Vector3 targetCharacterPosition)

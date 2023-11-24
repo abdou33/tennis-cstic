@@ -44,6 +44,11 @@ public class PointsManager : MonoBehaviour
             otherpointsText.text = "" + otherpoints;
             RestartGame();
         }
+
+        if(mypoints > 9 || otherpoints > 9){
+            mypoints = 0;
+            otherpoints = 0;
+        }
     }
     public void RestartGame()
     {

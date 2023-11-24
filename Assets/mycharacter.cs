@@ -34,7 +34,6 @@ public class mycharacter : MonoBehaviour
     {
         // Get the horizontal input (left/right arrow keys, or A/D keys)
         float horizontalInput = Input.GetAxis("Horizontal");
-        Debug.Log("horizontal: " + data);
 
         // Calculate the movement direction based on the input
         Vector3 movement = new Vector3(0f, 0f, data * -1);

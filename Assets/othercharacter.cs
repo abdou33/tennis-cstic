@@ -35,7 +35,6 @@ public class othercharacter : MonoBehaviour
             if(catchit){
                 float randomValue = Random.Range(-10f, 10f);
                 tennisBall.ShootBall(new Vector3(17.22f, 8f, transform.position.z), new Vector3(-17.22f, 8f, randomValue));
-                tennisBall.player2turn = true;
             }
             else{
                 tennisBall.transform.position = new Vector3(19.1f, 5f, 0f);

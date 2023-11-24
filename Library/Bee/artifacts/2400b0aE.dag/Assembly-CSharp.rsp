@@ -349,7 +349,9 @@
 -analyzer:"/home/abdou/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/PointsManager.cs"
 "Assets/TennisBall.cs"
+"Assets/UDPReceive.cs"
 "Assets/animations.cs"
+"Assets/handdetection.cs"
 "Assets/mycharacter.cs"
 "Assets/othercharacter.cs"
 -langversion:9.0

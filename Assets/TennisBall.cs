@@ -3,11 +3,7 @@ using UnityEngine;
 public class TennisBall : MonoBehaviour
 {
     public float initialSpeed = 1f;
-    public float jumpHeight = 20f; // Adjust this value to control the jump height
-    public bool player1turn;
-    public bool player2turn;
-    public bool catchit;
-    public float landingpointZ;
+    public float jumpHeight = 20f; // Adjust this value to control the jump heigh
 
 
     void Start()
@@ -18,7 +14,7 @@ public class TennisBall : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Player1:\t " + player1turn + "\tplayer2:\t" + player2turn);
+       
     }
 
     public void ShootBall(Vector3 startCharacterPosition, Vector3 targetCharacterPosition)

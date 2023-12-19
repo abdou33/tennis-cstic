@@ -359,7 +359,6 @@
 "Assets/TennisBall.cs"
 "Assets/UDPReceive.cs"
 "Assets/animations.cs"
-"Assets/handdetection.cs"
 "Assets/mycharacter.cs"
 "Assets/othercharacter.cs"
 -langversion:9.0

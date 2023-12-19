@@ -378,8 +378,83 @@ Transform:
   - {fileID: 1313924414}
   - {fileID: 610832210}
   - {fileID: 1743422402}
+  - {fileID: 183173477}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &183173476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 133422194}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 74.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 67.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.117
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.17525248
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17525248
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.68504494
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.68504494
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 118.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+      propertyPath: m_Name
+      value: tennis racket (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+--- !u!4 &183173477 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e11cc5483a43a344eae0979b6946fde2, type: 3}
+  m_PrefabInstance: {fileID: 183173476}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &186453140
 GameObject:
   m_ObjectHideFlags: 0

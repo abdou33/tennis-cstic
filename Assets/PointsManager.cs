@@ -24,7 +24,7 @@ public class PointsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // if the ball is behind my play mypoints++; if the ball is behind the enemy player otherpoints++; and restart the game
         if (Input.GetKeyDown(KeyCode.Space) && isBallPaused)
             { shootagain(); }
 

@@ -32,16 +32,13 @@ public class mycharacter : MonoBehaviour
     }
     void Update()
     {
-        // Get the horizontal input (left/right arrow keys, or A/D keys)
-        float horizontalInput = Input.GetAxis("Horizontal");
-
-        // Calculate the movement direction based on the input
+        // Calculate the movement direction based on the data recieved
         Vector3 movement = new Vector3(0f, 0f, data * -1);
 
         // Move the player using the Rigidbody component
         transform.Translate(movement * speed * Time.deltaTime);
 
-        // Clamp the position to stay within the specified range
+        // Clamp the position to stay within the specified range (-10, 10)
         float clampz = Mathf.Clamp(transform.position.z, minX, maxX);
         transform.position = new Vector3(transform.position.x, transform.position.y, clampz);
 
@@ -50,7 +47,7 @@ public class mycharacter : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        // Check if the collision is with the ball
+        // Check if the ball touches the player, if so shoot the ball
         if (collision.gameObject.CompareTag("TennisBall"))
         {
             float randomValue = UnityEngine.Random.Range(-10f, 10f);
@@ -66,6 +63,7 @@ public class mycharacter : MonoBehaviour
         {
             try
             {
+                // recieve hand data and save it
                 IPEndPoint anyIP = new IPEndPoint(IPAddress.Any, 0);
                 byte[] dataByte = client.Receive(ref anyIP);
                 data = float.Parse(Encoding.UTF8.GetString(dataByte));

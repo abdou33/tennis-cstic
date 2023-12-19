@@ -17,6 +17,7 @@ public class TennisBall : MonoBehaviour
        
     }
 
+    // shoot the ball funtion
     public void ShootBall(Vector3 startCharacterPosition, Vector3 targetCharacterPosition)
     {
         Rigidbody ballRb = GetComponent<Rigidbody>();

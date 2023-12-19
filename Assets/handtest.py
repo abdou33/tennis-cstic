@@ -20,11 +20,7 @@ while cap.isOpened():
         continue
 
     frame = cv2.flip(frame, 1)
-
-    # Convert the BGR image to RGB
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
-    # Process the frame to detect hands
     results = hands.process(rgb_frame)
 
     if results.multi_hand_landmarks:
